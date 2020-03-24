@@ -4,31 +4,39 @@
       "id": 6,
       "userName": "nico77",
       "password": "pass1",
-      "roleID": 2
+      "roleID": "2"
     },
     {
       "id": 7,
       "userName": "q1yal",
       "password": "pass1",
-      "roleID": 1
+      "roleID": "1"
     },
     {
       "id": 8,
       "userName": "dooxe",
       "password": "pass1",
-      "roleID": 1
+      "roleID": "1"
     },
     {
       "id": 9,
       "userName": "yerbo77",
       "password": "pass1",
-      "roleID": 1
+      "roleID": "1"
     },
     {
+      "id": 10,
       "userName": "nico01",
+      "surName": null,
       "password": "pass1",
-      "roleID": 2,
-      "id": 10
+      "roleID": 2
+    },
+    {
+      "id": 11,
+      "userName": "nico_zero",
+      "surName": "",
+      "password": "pass1",
+      "roleID": "2"
     }
   ],
   "roles": [

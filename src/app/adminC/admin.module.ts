@@ -26,6 +26,6 @@ import {DialogUserComponent} from './dialog-user/dialog-user.component';
     DialogBoxComponent,
     DialogUserComponent
   ],
-  entryComponents: [DialogUserComponent]
+  entryComponents: []
 })
 export class AdminModule { }

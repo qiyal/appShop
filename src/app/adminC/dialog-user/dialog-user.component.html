@@ -1,18 +1,16 @@
-<div class="bodyBox">
-  <form [formGroup]="form">
-    <label for="name">User Name:</label>
-    <input type="text" id="name" name="userName" formControlName="userName">
+<form [formGroup]="form">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="userName" formControlName="userName">
 
-    <label for="password">Password:</label>
-    <input type="text" id="password" name="password" formControlName="password">
-    <br>
+  <label for="password">Password:</label>
+  <input type="text" id="password" name="password" formControlName="password">
 
-    <label for="role">Role:</label>
-    <select id="role" name="nameRole" formControlName="nameRole">
-      <option *ngFor="let i of roles" value="{{i.id}}">{{i.nameRole}}</option>
-    </select>
-
-    <button *ngIf="new" (click)="create()">create</button>
-    <button *ngIf="!new" (click)="update()">update</button>
-  </form>
-</div>
+  <br>
+  <label for="roleUser">Roles: </label>
+  <select id="roleUser" name="roleID" formControlName="roleID">
+    <option *ngFor="let i of roles" [value]="i.id">{{i.nameRole}}</option>
+  </select>
+  <br>
+  <button *ngIf="new" (click)="create()">create</button>
+  <button *ngIf="!new" (click)="update()">update</button>
+</form>

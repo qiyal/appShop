@@ -24,7 +24,7 @@ export class AuthUserService {
 
     for (let i = 0; i < this.users.length; i++) {
       if (this.users[i].userName === username && this.users[i].password === password) {
-        if (this.users[i].roleID === 1) {
+        if (this.users[i].roleID === '1') {
           this.isAuth = true;
           localStorage.setItem('userName', this.users[i].userName);
         }
@@ -37,6 +37,7 @@ export class AuthUserService {
 
   logout() {
     this.isAuth = false;
+    localStorage.removeItem('userName');
   }
 
   isAuthenticated(): Promise<boolean> {

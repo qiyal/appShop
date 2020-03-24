@@ -1,11 +1,30 @@
 <h1>Shop</h1>
+<!--<div class="flex">-->
+<!--    <div *ngFor="let a of arrItems" class="item">-->
+<!--      <h2 class="head">{{a.nameProduct}}</h2>-->
+<!--      <div class="photo">Photo</div>-->
+<!--      <div class="content">-->
+<!--        <h3>Price: <span class="price">{{a.price}}</span></h3>-->
+<!--        <h3>Description: {{a.description}}</h3>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--</div>-->
 <div class="flex">
-    <div *ngFor="let a of arrItems" class="item">
-      <h2 class="head">{{a.nameProduct}}</h2>
-      <div class="photo">Photo</div>
-      <div class="content">
-        <h3>Price: <span class="price">{{a.price}}</span></h3>
-        <h3>Description: {{a.description}}</h3>
-      </div>
-    </div>
+<mat-card class="example-card item" *ngFor="let i of arrItems">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>{{i.nameProduct}}</mat-card-title>
+    <mat-card-subtitle class="price">{{i.price}} tg</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="https://sport-active.by/wp-content/uploads/2019/04/uirypqqxq83mwcjbf9ej.jpg" alt="Photo of Nike Air" style="width: 330px">
+  <mat-card-content>
+    <p>
+      {{i.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Buy</button>
+    <button mat-button>Add basket</button>
+  </mat-card-actions>
+</mat-card>
 </div>

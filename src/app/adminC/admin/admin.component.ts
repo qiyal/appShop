@@ -22,8 +22,8 @@ export class AdminComponent implements OnInit {
     this.getUsers();
   }
 
-  findIdRole(str: number) {
-    if (1 == str) {
+  findIdRole(str: string) {
+    if ("1" === str) {
       return 'admin';
     }
     else {
