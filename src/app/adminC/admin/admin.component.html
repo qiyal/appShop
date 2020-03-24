@@ -1,0 +1,78 @@
+<div>
+  <h2>Product Control Table</h2>
+  <button class="btnOne" (click)="createP()">Create</button>
+</div>
+  <table mat-table [dataSource]="dataProduct" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> ID </th>
+    <th mat-cell *matCellDef="let element"> {{element.id}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="nameProduct">
+    <th mat-header-cell *matHeaderCellDef> Product Name </th>
+    <th mat-cell *matCellDef="let element"> {{element.nameProduct}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="price">
+    <th mat-header-cell *matHeaderCellDef> Price </th>
+    <th mat-cell *matCellDef="let element"> {{element.price}} </th>
+  </ng-container>
+
+  <ng-container matColumnDef="description">
+    <th mat-header-cell *matHeaderCellDef> Description </th>
+    <th mat-cell *matCellDef="let element"> {{element.description}} </th>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> action </th>
+    <th mat-cell *matCellDef="let element">
+      <button style="background-color: crimson; color: #f0f3f6" (click)="deleteP(element.id)">Delete</button>
+      <button style="background-color: chartreuse; color: #f0f3f6" (click)="updateP(element)">Update</button>
+    </th>
+  </ng-container>
+  <!-- Header and Row Declarations -->
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+</table>
+<!--      Product Part-->
+<div>
+  <h2>Users Control Table</h2>
+  <button class="btnOne" (click)="createU()">Create</button>
+</div>
+
+<table mat-table [dataSource]="dataUsers" class="mat-elevation-z8">
+
+  <ng-container matColumnDef="id">
+    <th mat-header-cell *matHeaderCellDef> UserID </th>
+    <th mat-cell *matCellDef="let element"> {{element.id}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="userName">
+    <th mat-header-cell *matHeaderCellDef> Product Name </th>
+    <th mat-cell *matCellDef="let element"> {{element.userName}} </th>
+  </ng-container>
+
+
+  <ng-container matColumnDef="roleID">
+    <th mat-header-cell *matHeaderCellDef> Role </th>
+    <th mat-cell *matCellDef="let element"> {{findIdRole(element.roleID)}} </th>
+  </ng-container>
+
+  <ng-container matColumnDef="action">
+    <th mat-header-cell *matHeaderCellDef> action </th>
+    <th mat-cell *matCellDef="let element">
+      <button style="background-color: crimson; color: #f0f3f6" (click)="deleteU(element.id)">Delete</button>
+      <button style="background-color: chartreuse; color: #f0f3f6" (click)="updateU(element)">Update</button>
+    </th>
+  </ng-container>
+  <!-- Header and Row Declarations -->
+  <tr mat-header-row *matHeaderRowDef="displayedUsers"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedUsers;"></tr>
+</table>
+
+
+

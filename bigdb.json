@@ -1,0 +1,82 @@
+{
+  "users": [
+    {
+      "id": 6,
+      "userName": "nico77",
+      "password": "pass1",
+      "roleID": 2
+    },
+    {
+      "id": 7,
+      "userName": "q1yal",
+      "password": "pass1",
+      "roleID": 1
+    },
+    {
+      "id": 8,
+      "userName": "dooxe",
+      "password": "pass1",
+      "roleID": 1
+    },
+    {
+      "id": 9,
+      "userName": "yerbo77",
+      "password": "pass1",
+      "roleID": 1
+    },
+    {
+      "userName": "nico01",
+      "password": "pass1",
+      "roleID": 2,
+      "id": 10
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "nameRole": "admin"
+    },
+    {
+      "id": 2,
+      "nameRole": "user"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "nameProduct": "NIke Boots 2",
+      "price": 22000,
+      "description": "from China"
+    },
+    {
+      "nameProduct": "NIke Super boots",
+      "price": 50000,
+      "description": "from USA",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "nameProduct": "Abidas",
+      "price": 23333,
+      "description": "from USA"
+    },
+    {
+      "nameProduct": "Abidas",
+      "price": 20000,
+      "description": "from Canada",
+      "id": 4
+    },
+    {
+      "nameProduct": "Nike Ball",
+      "price": 7000,
+      "description": "from China",
+      "id": 5
+    },
+    {
+      "id": 7,
+      "nameProduct": "Puma Gread Boots",
+      "price": 350000,
+      "description": "from Spane"
+    }
+  ]
+}

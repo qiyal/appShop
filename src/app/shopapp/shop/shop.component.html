@@ -1,0 +1,11 @@
+<h1>Shop</h1>
+<div class="flex">
+    <div *ngFor="let a of arrItems" class="item">
+      <h2 class="head">{{a.nameProduct}}</h2>
+      <div class="photo">Photo</div>
+      <div class="content">
+        <h3>Price: <span class="price">{{a.price}}</span></h3>
+        <h3>Description: {{a.description}}</h3>
+      </div>
+    </div>
+</div>

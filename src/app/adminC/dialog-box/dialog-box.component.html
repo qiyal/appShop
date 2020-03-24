@@ -1,0 +1,16 @@
+<div class="bodyBox">
+<form [formGroup]="form">
+  <label for="name">Product Name:</label>
+  <input type="text" id="name" name="nameProduct" formControlName="nameProduct">
+
+  <label for="price">Price</label>
+  <input type="number" id="price" name="price" formControlName="price">
+  <br>
+
+  <label for="des">Description:</label>
+  <input type="text" id="des" name="description" formControlName="description">
+
+  <button *ngIf="new" (click)="create()">create</button>
+  <button *ngIf="!new" (click)="update()">update</button>
+</form>
+</div>
